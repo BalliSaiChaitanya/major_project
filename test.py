@@ -1,3 +1,4 @@
-import os
-if(os.stat("./ledger_donors.txt").st_size == 0):
-    print("YESSSSSSS")
+file = open('ledger_donors.txt','r')
+topology_list = file.readlines()
+for i in topology_list:
+    print (i)

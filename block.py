@@ -14,6 +14,7 @@ def donor_details():
     age=input("Enter Age")
     gender=input("Enter gender")
     organ=input("Organ to donate")
+    d_details.append(organ)
     d_details.append(name)
     d_details.append(mobi)
     d_details.append(address)
@@ -21,7 +22,7 @@ def donor_details():
     d_details.append(blood)
     d_details.append(age)
     d_details.append(gender)
-    d_details.append(organ)
+    
 
     str_details="*"
     str_details=str_details.join(d_details)
@@ -47,6 +48,7 @@ def recipient_details():
     age=input("Enter Age")
     gender=input("Enter gender")
     organ=input("Which Organ needed")
+    r_details.append(organ)
     r_details.append(name)
     r_details.append(mobi)
     r_details.append(address)
@@ -54,7 +56,7 @@ def recipient_details():
     r_details.append(blood)
     r_details.append(age)
     r_details.append(gender)
-    r_details.append(organ)
+    
 
     str_details="*"
     str_details=str_details.join(r_details)
