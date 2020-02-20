@@ -1,4 +1,5 @@
 from hash_fun import decrypt
+from mail import email_send
 def match_donors_recipient():
     d=[]
     r=[]
@@ -26,9 +27,9 @@ def match_donors_recipient():
                 print("Donating "+d[i][1]+"'s "+organ+" to "+r[j][1])
                 print("\nSharing Data To Hospital Server")
                 print("Sharing "+d[i][1]+"'s"+" information to "+r[j][1])
+                email_send(d[i],r[j][1],r[j][4],organ)
     if(flg):
         print("\n***** No Hits found *****\n")
-
 
     return 0
 

@@ -6,14 +6,14 @@ def ency(node1,node2):
 def donor_details():
     print("#-------> Enter Donor Details <------#")
     d_details=[]
-    name=input("Enter Name")
-    mobi=input("Enter Contact number")
-    address=input("Enter address")
-    email=input("Enter email")
-    blood=input("Enter blood group")
-    age=input("Enter Age")
-    gender=input("Enter gender")
-    organ=input("Organ to donate")
+    name=input("Enter Name: ")
+    mobi=input("Enter Contact number: ")
+    address=input("Enter address: ")
+    email=input("Enter email: ")
+    blood=input("Enter blood group: ")
+    age=input("Enter Age: ")
+    gender=input("Enter gender: ")
+    organ=input("Organ to donate: ")
     d_details.append(organ)
     d_details.append(name)
     d_details.append(mobi)
@@ -40,14 +40,14 @@ def donor_details():
 def recipient_details():
     print("#-------> Enter recpient Details <------#")
     r_details=[]
-    name=input("Enter Name")
-    mobi=input("Enter Contact number")
-    address=input("Enter address")
-    email=input("Enter email")
-    blood=input("Enter blood group")
-    age=input("Enter Age")
-    gender=input("Enter gender")
-    organ=input("Which Organ needed")
+    name=input("Enter Name: ")
+    mobi=input("Enter Contact numbe: r")
+    address=input("Enter address: ")
+    email=input("Enter email: ")
+    blood=input("Enter blood group: ")
+    age=input("Enter Age: ")
+    gender=input("Enter gender: ")
+    organ=input("Which Organ needed: ")
     r_details.append(organ)
     r_details.append(name)
     r_details.append(mobi)
@@ -77,10 +77,6 @@ def match_organs():
         print(dry_details)
         samp=decrypt(dry_details)
         print(samp)"""
-    if(x):
-        print("details Sent")
-    else:
-        print("Error Occured")
 
 def check_connection():
     pass
@@ -89,11 +85,11 @@ def status():
     pass
 
 def options():
-    print("1: Enter Donor's Details")
-    print("2: Enter Recipient details")
-    print("3: show matched patients")
-    print("4: check connection and verification")
-    print("5: status")
+    print("1: Enter Donor's Details ")
+    print("2: Enter Recipient details ")
+    print("3: show matched patients ")
+    print("4: check connection and verification ")
+    print("5: status ")
     ip=int(input(""))
 
     #swithc function
