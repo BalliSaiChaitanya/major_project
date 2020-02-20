@@ -71,7 +71,7 @@ def recipient_details():
     
 
 def match_organs():
-    x= match_donors_recipient()
+    match_donors_recipient()
     """with open('ledger_donors') as f:
         dry_details = f.readline()
         print(dry_details)
@@ -79,17 +79,14 @@ def match_organs():
         print(samp)"""
 
 def check_connection():
-    pass
-
-def status():
-    pass
+    print("Detected Only one node!")
 
 def options():
     print("1: Enter Donor's Details ")
     print("2: Enter Recipient details ")
     print("3: show matched patients ")
     print("4: check connection and verification ")
-    print("5: status ")
+    print("5: exit ")
     ip=int(input(""))
 
     #swithc function
@@ -102,7 +99,7 @@ def options():
     elif(ip==4):
         check_connection()
     elif(ip==5):
-        status()
+        pass
 
 options()
 
