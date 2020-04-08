@@ -16,7 +16,7 @@ def match_donors_recipient():
         dec=decrypt(i)
         st=dec.split("*")
         r.append(st)
-    print("\n ----->Searching Finding Hits <--------\n")
+    print("\n ----->Searching Hits <--------\n")
     for i in range(len(d)):
         organ=d[i][0]
         for j in range(len(r)):
